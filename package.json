@@ -54,6 +54,8 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "@manoel_joaoo/spotify-wrapper": "^2.1.0"
+    "@manoel_joaoo/spotify-wrapper": "^2.1.0",
+    "jsdom": "^13.0.0",
+    "jsdom-global": "^3.0.2"
   }
 }
