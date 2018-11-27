@@ -5,4 +5,4 @@ const albums = spotify.search.albums('Incubus');
 const albumList = document.getElementById('album-list');
 
 albums
-  .then(data => renderAlbuns(data.albuns.items, albumList));
+  .then(data => renderAlbuns(data.albums.items, albumList));

@@ -1,10 +1,11 @@
 {
   "name": "spotify-wrapper-player",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A player using the spotify-wrapper lib",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --color --inline --open",
+    "build": "webpack",
     "lint": "./node_modules/.bin/eslint src/**/*.js tests/**/*.spec.js",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require @babel/register",
     "test:tdd": "npm test -- --watch ",
@@ -54,7 +55,7 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "@manoel_joaoo/spotify-wrapper": "^2.1.0",
+    "@manoel_joaoo/spotify-wrapper": "^2.2.0",
     "jsdom": "^13.0.0",
     "jsdom-global": "^3.0.2"
   }
