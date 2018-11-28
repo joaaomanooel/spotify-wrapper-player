@@ -5,7 +5,7 @@ export default function renderAlbumInfo(data, element) {
       <p class="album-artist">Incubus</p>
       <p class="album-counter">13 Músicas</p>
   `;
-  let divItem = element.innerHTML;
-  divItem = marckup;
+  const divItem = element;
+  divItem.innerHTML = marckup;
   return divItem;
 }
