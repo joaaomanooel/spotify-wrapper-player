@@ -7,5 +7,6 @@ export default function renderAlbumInfo(data, element) {
   `;
   const divItem = element;
   divItem.innerHTML = marckup;
-  return divItem;
+
+  return data;
 }
