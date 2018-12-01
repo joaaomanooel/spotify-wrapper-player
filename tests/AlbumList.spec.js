@@ -1,5 +1,5 @@
-import 'jsdom-global/register';
 import { expect } from 'chai';
+import 'jsdom-global/register';
 import renderAlbuns from '../src/AlbumList';
 
 describe('AlbumList', () => {
