@@ -1,7 +1,7 @@
 import spotify from './Spotify';
 import renderAlbuns from './AlbumList';
 
-const albums = spotify.search.albums('Incubus');
+const albums = spotify.search.albums('Emicida');
 const albumList = document.getElementById('album-list');
 
 albums

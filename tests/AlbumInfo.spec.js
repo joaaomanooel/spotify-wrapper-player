@@ -3,13 +3,6 @@ import { expect } from 'chai';
 import renderAlbumInfo from '../src/AlbumInfo';
 
 describe('Album Info', () => {
-  const marckup = `
-      <img class="album-image" src="https://i.scdn.co/image/a13aadb368a956be48fe9089acb64333f0c0ca40" alt="">
-      <p class="album-title">Make Yourself</p>
-      <p class="album-artist">Incubus</p>
-      <p class="album-counter">13 Músicas</p>
-  `;
-
   const data = {
     album_type: 'album',
     artists: [{
@@ -35,6 +28,13 @@ describe('Album Info', () => {
       total: 18,
     },
   };
+
+  const marckup = `
+      <img class="album-image" src="${data.images[0].url}" alt="${data.name}">
+      <p class="album-title">${data.name}</p>
+      <p class="album-artist">${data.artists[0].name}</p>
+      <p class="album-counter">${data.tracks.total} Músicas</p>
+  `;
 
   it('Should and append the marckup given a correct data', () => {
     const element = document.createElement('div');
