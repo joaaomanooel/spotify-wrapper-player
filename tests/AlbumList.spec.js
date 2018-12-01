@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import 'jsdom-global/register';
 import renderAlbuns from '../src/AlbumList';
 
-describe('AlbumList', () => {
+describe('Album List', () => {
   const data = [{
     album_type: 'album',
     artists: [{
