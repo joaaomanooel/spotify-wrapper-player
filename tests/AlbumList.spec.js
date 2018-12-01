@@ -2,7 +2,7 @@ import 'jsdom-global/register';
 import { expect } from 'chai';
 import renderAlbuns from '../src/AlbumList';
 
-describe('AlbumLit', () => {
+describe('AlbumList', () => {
   const data = [{
     album_type: 'album',
     artists: [{
@@ -106,10 +106,10 @@ describe('AlbumLit', () => {
     expect(element.innerHTML).to.be.eql(markup);
   });
 
-  it('Sould create and append when more than 1 album', () => {
-    const element2 = document.createElement('div');
-    renderAlbuns(data2, element2);
+  it('Shouls create and append the markup when more than 1 item', () => {
+    const element = document.createElement('div');
+    renderAlbuns(data2, element);
 
-    expect(element2.innerHTML).to.be.eql(markup2);
+    expect(element.innerHTML).to.be.eql(markup2);
   });
 });

@@ -13,5 +13,4 @@ export default function renderAlbuns(data, element) {
   const markup = createMarkup(data);
   const divAlbuns = element;
   divAlbuns.innerHTML = markup;
-  return divAlbuns;
 }
