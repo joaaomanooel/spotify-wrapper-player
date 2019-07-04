@@ -9,7 +9,9 @@
     "lint": "eslint src/**/*.js tests/**/*.spec.js",
     "test": "mocha tests/**/*.spec.js --require @babel/register",
     "test:tdd": "npm test -- --watch ",
-    "test:converage": "nyc npm test"
+    "test:converage": "nyc npm test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "nyc": {
     "functions": 80,
@@ -59,6 +61,8 @@
   "dependencies": {
     "@manoel_joaoo/spotify-wrapper": "^2.2.0",
     "jsdom": "^13.0.0",
-    "jsdom-global": "^3.0.2"
-  }
+    "jsdom-global": "^3.0.2",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
