@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@manoel_joaoo/spotify-wrapper": "^2.2.0",
-    "jsdom": "^13.0.0",
+    "jsdom": "^16.5.1",
     "jsdom-global": "^3.0.2"
   }
 }
